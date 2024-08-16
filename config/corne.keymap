@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &led_strip { chain-length = <6>; };
+&mt {
+    tapping-term-ms = <40>;
+};
 
 / {
     keymap {
