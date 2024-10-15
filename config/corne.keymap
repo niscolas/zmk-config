@@ -10,10 +10,10 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5 // right-hand keys
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2 // thumb keys
 
-#define EXTRAS_LAYER 1
+#define LOWER_LAYER 1
 #define SIMPLE_LAYER 2
-#define LOWER_LAYER 3
-#define RAISE_LAYER 4
+#define RAISE_LAYER 3
+#define EXTRAS_LAYER 4
 
 /* left-hand HRMs */
 ZMK_HOLD_TAP(hml,
