@@ -15,7 +15,7 @@ ZMK_HOLD_TAP(hml,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
-    require-prior-idle-ms = <250>;
+    require-prior-idle-ms = <75>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
     hold-trigger-on-release;             // delay positional check until key-release
@@ -26,7 +26,7 @@ ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
-    require-prior-idle-ms = <250>;
+    require-prior-idle-ms = <75>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;             // delay positional check until key-release
@@ -78,7 +78,7 @@ ZMK_HOLD_TAP(hmr,
             bindings = <
 &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI    &trans          &trans                &trans                &trans      &trans            &trans
 &rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR  &rgb_ug RGB_SPD    &kp C_PREVIOUS  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_NEXT  &kp C_PLAY_PAUSE  &trans
-&trans           &trans           &trans           &trans           &trans           &trans             &trans          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans      &trans            &trans
+&trans           &trans           &kp DELETE       &trans           &trans           &trans             &trans          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans      &trans            &trans
                                                    &trans           &trans           &trans             &trans          &trans                &trans
             >;
         };
